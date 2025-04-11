@@ -77,18 +77,19 @@
 \newpage
 
 % 摘要页
-\thispagestyle{empty} % 摘要页不需要页码
+%\thispagestyle{empty} % 摘要页不需要页码
+\pagenumbering{Roman}  % 摘要页的页码用罗马数字 I, II
 \begin{center}
     {\zihao{3} \bfseries 摘要}
 \end{center}
 
 本科毕业论文是本科生培养体系中的关键一环，是毕业前夕全面检验学生综合实践能力与专业素养的必要步骤。但实际情况是，不少同学撰写的毕业论文质量欠佳，尤其在论文格式方面问题较为突出。本文聚焦于本科毕业论文 \LaTeX {} 模板的使用方法展开探讨。详细阐述了在运用该模板时，数学公式、表格、图片的格式规范，介绍了数学环境的正确搭建方式，同时也说明了参考文献格式的书写要求。旨在为同学们提供清晰、实用的指引，助力大家规范、高效地完成毕业论文写作，提升论文整体质量。
  
-\keywords{毕业论文，论文排版，参考文献}
+\noindent{\bf 关键词：} {毕业论文，论文排版，参考文献}
 
 % Abstract 页
 \newpage
-\thispagestyle{empty} % Abstract 页不需要页码
+%\thispagestyle{empty} % Abstract 页不需要页码
 \begin{center}
     {\zihao{3} \bfseries Abstract}
 \end{center}
@@ -96,16 +97,16 @@
 The undergraduate thesis project is a crucial part of the undergraduate training program and a necessary step to comprehensively assess students' comprehensive practical abilities and professional qualities before graduation. However, the theses written by many students are of relatively poor quality, especially in terms of thesis formatting. 
 This paper explores the usage methods of the LaTeX template for undergraduate theses. It details the writing rules for mathematical formulas, table formats, picture formats, mathematical environments, and reference formats. The aim is to provide clear and practical guidance to help students complete their thesis writing in a standardized and efficient manner, thereby enhancing the overall quality of their theses. 
 
-
-\keywords{Undergraduate Thesis, Paper Typesetting, References}
+\noindent{\bf Keywords:}$\quad$ {Undergraduate Thesis, Paper Typesetting, References}
 
 % 目录页
 \newpage
-\thispagestyle{empty} % 目录页不需要页码
+%\thispagestyle{empty} % 目录页不需要页码
 \tableofcontents
 
 \newpage  % 强制换新的一页
 \setcounter{page}{1} % 页码开始为1
+\pagenumbering{arabic}  % 正文的页码用阿拉伯数字 1, 2, 3
 
 \section{引言}
 
@@ -371,7 +372,9 @@ c^2 = a^2 + b^2
 
 通过使用本文所介绍的\LaTeX 模板使用方法和排版格式规范，有望帮助学生解决毕业论文排版中的常见问题，提高论文的排版质量和规范性，从而提升学生综合运用专业知识完成毕业论文的能力，为其毕业后的求职立业以及未来撰写专业学术论文奠定良好基础。但需要注意的是，\LaTeX 的使用对于部分学生而言可能存在一定难度，未来可进一步开发更易于上手的辅助工具或提供更详细的教学资源，以促进\LaTeX 在本科毕业论文写作中的更广泛应用。 
 
+
 % 参考文献（需要创建reference.bib文件）
+\clearpage
 \bibliography{reference.bib}
 
 \newpage
